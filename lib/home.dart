@@ -38,7 +38,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   padding: const EdgeInsets.only(bottom: 80),
                   child: Column(
                     children: [
-                      SizedBox(height: 30),
                       app_bar(),
                       SizedBox(height: 10),
                       tabbar(),

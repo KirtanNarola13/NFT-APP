@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nft_market/home.dart';
+import 'package:nft_market/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
       debugShowCheckedModeBanner: false,
+      routes: {
+        '/': (context) => Splash(),
+        'home': (context) => Home(),
+      },
     );
   }
 }
